@@ -13,43 +13,13 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-.button1{
-  background-color: var(--accent-color);
-  color: var(--secondary-color);
-  padding: 10px 15px;
-  border-radius: 5px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  scale: 1.07;
-}
-button:hover{
-  color:var(--primary-color);
-  border-color: var(--secondary-color);
 
-}
-.button2 {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  padding: 10px 15px;
-  margin-left: 15px;
-  margin-right: 15px;
-  border-radius: 5px;
-  border-color: var(--accent-color);
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-button:hover.button2 {
-  color:var(--primary-color);
-  background-color:var(--accent-color);
-  border-color: var(--secondary-color);
-  scale: 1.07;
+body{
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
 }
 
-body {
-  margin:5;
-  background-color: var(--primary-color);
-  color: var(--accent-color);
-}
 .navbar.blurred {
   background: rgba(0, 0, 0, 0.7);
   -webkit-backdrop-filter: blur(10px);
@@ -122,20 +92,18 @@ body {
 
 
 footer {
-  align-items: center;
   margin: 0;
   padding: 1em 0;
   background-color: var(--primary-color);
   color: var(--secondary-color);
   font-family: var(--title-font);
-  text-align: center!important;
+  text-align: center;
 }
 footer .content {
   margin: 0;
   padding: 7em 0;
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 250px;
 }
 footer .content .useful_links,
@@ -209,22 +177,56 @@ footer p {
   font-family: var(--title-font);
 }
 
-body section {
+.button1{
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  scale: 1.07;
+}
+button:hover{
+  color:var(--primary-color);
+  border-color: var(--secondary-color);
+
+}
+.button2 {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 10px 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 5px;
+  border-color: var(--accent-color);
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+button:hover.button2 {
+  color:var(--primary-color);
+  background-color:var(--accent-color);
+  border-color: var(--secondary-color);
+  scale: 1.07;
+}
+
+body .section {
   display: flex;
   justify-content: center;
+  text-align: center;
   height: 25vh;
 }
-body section h1 {
+body .section h1 {
   color:var(--secondary-color);
   font-size: 450%;
 }
 
-body section h2 {
+body .section h2 {
   font-size: 7px;
 }
 
-body main {
+body .main {
   color: var(--secondary-color);
+  padding-top: 400px;
 }
 
 .line {
