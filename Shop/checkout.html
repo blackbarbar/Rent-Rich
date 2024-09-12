@@ -1,0 +1,59 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#"><img src="img/logo.png" alt="" /></a>
+    </div>
+
+    <div class="checkoutsection">
+        <div class="item">
+            <img src="img/schmuck1.jpg" alt="">
+            <p>10.000,00 €</p>
+        </div>
+        <div class="out">
+            <form action="" method="post">
+                <label for="quantity">Quantity: </label>
+                <input type="number" id="quantity" name="quantity" min="1" max="500"><br>
+                <label for="room">VillaID: </label>
+                <input type="text" id="room" name="room" value=""><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const section1 = document.querySelector("#section_1");
+              const navbar = document.querySelector(".navbar");
+        
+              if (!section1 || !navbar) {
+                console.error("Elements not found: section1 or navbar");
+                return; // Exit if elements are not found
+              }
+        
+              function handleScroll() {
+                const section1Bottom = section1.offsetTop + section1.offsetHeight;
+                const scrollPosition = window.scrollY + window.innerHeight;
+        
+                if (scrollPosition > section1Bottom) {
+                  navbar.classList.add("blurred");
+                } else {
+                  navbar.classList.remove("blurred");
+                }
+              }
+        
+              // Attach the scroll event listener
+              document.addEventListener("scroll", handleScroll);
+        
+              // Initial check in case the page is loaded with some scroll position
+              handleScroll();
+            });
+          </script>
+  </body>
+</html>
