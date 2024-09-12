@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#"><img src="img/logo.png" alt="" /></a>
+      <div class="links">
+        <a href="#section_1">Our Vision of Luxury Living</a>
+        <a href="#benefits">Benefits & Privileges</a>
+        <a href="#destinations">Explore Our Exclusive Destinations</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="header">
+      <h1>Rich Rental.ai -<br />Luxurious,<br />Limitless Lifestyle.</h1>
+    </div>
+  
+    <section>
+      <h1>
+         Still looking for the perfect Chef - <br> 
+         for What? 
+         YOUR VERY RICH Vacation!
+        <br />
+        <br />
+        Our Personal Chefs - <br/> Trained Exclusively for YOUR RICH Appetite
+      </h1>
+    </section>
+
+    <main>
+      <br /><br />
+      <br /><br />
+      <br /><br />
+      <br /><br />
+
+      <div class="line">
+        <div class="japaner">
+          <img  src="../img/japakoch.jpg" />
+          <h1>Takahashi Kaito</h1>
+
+          <h1 class="J">Japanese Cuisiné</h1>
+          <p>
+            Sushi, Puffer Fish, Wagyu or Fugu <br />
+            <br />
+            Takahashi Kaito `s Menu will make YOUR RICH Heart skip a beat
+          </p>
+          <button class="button2">15.000$/ per Day</button>
+          <a href="html/portfoliojap.html">
+            <button class="button1">Portfolio of Takahashi Kaito</button>
+          </a>
+        </div>
+        <br />
+        <br />
+        <div class="chefprofile">
+          <img src="../img/frenchcook.jpg" />
+          <h1>Édouard de Beaumont</h1>
+          <h1>French Cuisiné</h1>
+          <p>
+            Truffels, Lobster , Caviar or Foie Gras<br />
+            <br />
+            Édouard de Beaumont has everything YOUR RICH Taste dreams of
+          </p>
+          <button class="button2">17.500$/ per Day</button>
+          <a class="bild1" href="html/portfoliofra.html">
+            <button class="button1">Portfolio of Édouard de Beaumont</button>
+          </a>
+        </div>
+        <div class="third"> 
+          <img src="../img/mexkoch.jpg" />
+          <h1>Alejandro del Vallet</h1>
+          <h1>Mexican Cuisiné</h1>
+          <p>
+           Tamales, Chiles rellenos , Ceviche or Sopaipilla <br />
+            <br />
+            Alejandro del Valle manufactures what YOUR RICH Tastebuds want 
+          </p>
+          <button class="button2">13.500$/ per Day</button>
+          <a class="bild1" href="html/portfoliomex.html">
+            <button class="button1">Portfolio of Alejandro del Valle</button>
+
+        </div>
+      </div>
+    </main>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const section1 = document.querySelector("#section_1");
+      const navbar = document.querySelector(".navbar");
+  
+      if (!section1 || !navbar) {
+        console.error("Elements not found: section1 or navbar");
+        return; // Exit if elements are not found
+      }
+  
+      function handleScroll() {
+        const section1Bottom = section1.offsetTop + section1.offsetHeight;
+        const scrollPosition = window.scrollY + window.innerHeight;
+  
+        if (scrollPosition > section1Bottom) {
+          navbar.classList.add("blurred");
+        } else {
+          navbar.classList.remove("blurred");
+        }
+      }
+  
+      // Attach the scroll event listener
+      document.addEventListener("scroll", handleScroll);
+  
+      // Initial check in case the page is loaded with some scroll position
+      handleScroll();
+    });
+  </script>
+  
+  
+  <footer id="contact">
+    
+    <div class="content">
+      <div class="useful_links">
+        <h3>Useful Links</h3>
+        <div class="link">
+          <a href="#">Rent a villa</a>
+        </div>
+        <div class="link">
+          <a href="#">Buy merchandise</a>
+        </div>
+        <div class="link">
+          <a href="#">Book extras</a>
+        </div>
+      </div>
+      <div class="social_media">
+        <h3>Folge Uns</h3>
+        <div class="link">
+          <a href="#">Instagram</a>
+        </div>
+        <div class="link">
+          <a href="#">Facebook</a>
+        </div>
+        <div class="link">
+          <a href="#">YouTube</a>
+        </div>
+        <div class="link">
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+      <div class="contact">
+        <h3>Contact</h3>
+        <div class="link">
+          <p>Tel.: 0154/2210834</p>
+        </div>
+        <div class="link">
+          <p>Fax.: 0154/5639576</p>
+        </div>
+        <div class="link">
+          <p>Email: contact@richrental.ai</p>
+        </div>
+      </div>
+    </div>
+    <img src="img/logo.png" alt="">
+    <p>&copy; 2024 Rich Rental. All Rights Reserved</p>
+    
+  </footer>
+</html>
