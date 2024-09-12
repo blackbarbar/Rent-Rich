@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+  --background-color: black;
+  --primary-color: #000811;
+  --secondary-color: white;
+  --accent-color: #b48803;
+  --title-font: "Playfair Display", serif;
+  --content-font: font-family: "PT Serif", serif;
+  --border-radius: .5em;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+}
+
+.navbar.blurred {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+}
+
+.navbar {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  transition: background-color 0.3s ease;
+
+  img {
+    margin: 0 0 0 1em;
+    height: 90px;
+  }
+
+  .links {
+    margin: 0;
+
+    a {
+      margin: 0 30px;
+      text-decoration: none;
+      color: var(--secondary-color);
+      font-family: sans-serif;
+      font-size: 18px;
+      position: relative;
+    }
+
+    a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 2px;
+      width: 0;
+      background-color: currentColor;
+      transition: width 0.5s ease;
+    }
+
+    a:hover::after {
+      width: 100%;
+    }
+  }
+}
+
+.header {
+  margin: 100px 0 0 0;
+  height: 100vh;
+  background-image: url("../img/backgrounds/welcome.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+
+  h1 {
+    margin: 0;
+    padding: 0 0 2em 1em;
+    font-family: var(--title-font);
+    font-weight: 700;
+    font-style: normal;
+    color: var(--secondary-color);
+    font-size: 125px;
+  }
+}
+
+.head {
+  background-color: rgb(46, 42, 42);
+  border: #b48803 solid 2px;
+  margin-top: 3%;
+
+  h2 {
+    font-family: var(--title-font);
+    text-align: center;
+    color: #b48803;
+    font-size: 40px;
+    .vil {
+      margin-top: 0;
+    }
+  }
+}
+
+h3 {
+  font-family: var(--title-font);
+  color: var(--secondary-color);
+  text-align: center;
+  margin: 1.5%;
+}
+
+p {
+  font-family: var(--title-font);
+  color:var(--secondary-color);
+  text-align: center;
+}
+
+.products {
+  margin: 0;
+
+  .product {
+    margin: 0;
+    width: 500px;
+    text-align: center;
+    margin-bottom: 10em;
+
+    img {
+      height: 250px;
+      align-content: center;
+    }
+
+    button {
+      background-color: black;
+      color: #b48803;
+      padding: 1em 0;
+      margin: 2em 0 0 0;
+      width: 250px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border: #b48803 solid 0.2em;
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #b48803;
+      color: black;
+    }
+  }
+
+  .apartments {
+    margin: 10em 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15em;
+
+    img {
+      height: 20em;
+      width: 33em;
+    }
+  }
+  .villas {
+    margin: 10em 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15em;
+  }
+
+  .pointer {
+    margin: 0;
+    display: inline;
+
+    img {
+      height: 80px;
+      width: auto;
+      margin: 0;
+      border: #644b00 solid 0.2em;
+      cursor: pointer;
+      transition-duration: 0.4s;
+      &:hover {
+        border: #c39200 solid 0.2em;
+      }
+    }
+  }
+}
+
+footer {
+    margin: 0;
+    padding: 1em 0;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: var(--title-font);
+    text-align: center;
+  
+    .content {
+      margin: 0;
+      padding: 7em 0;
+      display: flex;
+      justify-content: center;
+      gap: 250px;
+  
+  
+      .useful_links,
+      .social_media,
+      .contact {
+        margin: 0;
+        padding: 2em 0;
+        width: 250px;
+        border-radius: var(--border-radius);
+        text-align: center;
+        border-bottom: 2px solid var(--accent-color);
+  
+        h3 {
+          margin: .5em 0 2em;
+          padding: 0;
+          color: var(--accent-color);
+          font-family: var(--title-font);
+          font-size: 30px;
+          text-decoration: underline;
+        }
+  
+        a,
+        p {
+          margin: 1em 0;
+          display: inline-block;
+          font-family: var(--content-font);
+          color: white;
+          font-size: 20px;
+          text-decoration: none;
+          position: relative;
+        }
+  
+        a::after,
+        p::after {
+          content: "";
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          height: 2px;
+          width: 0;
+          background-color: currentColor;
+          transition: width 0.5s ease, left 0.5s ease;
+        }
+  
+        a:hover::after,
+        p:hover::after {
+          left: -5px;
+          width: calc(100% + 10px);
+        }
+  
+        p:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  
+    img {
+      height: 500px;
+    }
+  
+    p {
+      margin: 0;
+      font-family: var(--title-font);
+    }
+  }
