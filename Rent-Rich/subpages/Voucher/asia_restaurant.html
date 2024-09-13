@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voucher Asia Restaurant</title>
+  <link rel="stylesheet" href="./css/styles_cart.css">
+  <style>
+    body {
+      background-color: #e6af19;
+      font-family: Arial, sans-serif;
+    }
+    
+    h1, h2, h3 {
+      color: #333;
+    }
+
+    .selection {
+      margin-bottom: 20px;
+    }
+
+    select, button {
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    #cart-container {
+      margin-top: 20px;
+    }
+
+    .cart-item {
+      margin-bottom: 10px;
+    }
+
+    #total {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Voucher Asia Restaurant Saigon</h1>
+
+  <!-- Anzahl Personen -->
+  <div class="selection">
+    <label for="persons_asia_restaurant"><h2>Persons</h2></label>
+    <select id="persons_asia_restaurant">
+      <option value="1">1 Person</option>
+      <option value="2">2 Persons</option>
+    </select>
+  </div>
+
+  <!-- Exklusive Angebote -->
+  <div class="selection">
+    <label for="type_asia_restaurant"><h2>Exclusive Angebote</h2></label>
+    <select id="type_asia_restaurant">
+      <option value="50">1 Voucher 50,00 € Asia Restaurant Saigon</option>
+      <option value="100">2 Vouchers 100,00 € Asia Restaurant Saigon</option>
+    </select>
+  </div>
+
+  <!-- Warenkorb Button -->
+  <button class="add-to-cart-btn" onclick="addToCart()">Add to cart</button>
+
+  <div id="cart">
+    <!-- Hier werden die hinzugefügten Artikel angezeigt -->
+  </div>
+  <div id="total">Total price: 0.00 €</div>
+  <div id="empty-message" style="display:none;">Cart is empty.</div>
+  
+  <h3>(You will receive detailed Invoice with VAT after Payment)</h3>
+
+  <script src="./script/cart_asia_restaurant.js"></script>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,308 @@
+/* Grundlegendes Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column; /* Änderung für Flexbox Layout */
+    min-height: 100vh;      /* Mindesthöhe für Body */
+}
+
+
+/* Hauptinhalt Bereich */
+.main-content {
+    margin-left: 200px;        /* Platz für die Navbar auf der linken Seite */
+    padding: 80px 20px 20px;   /* Innenabstand für den Inhalt, 80px oben für Header */
+    flex: 1;                   /* Flexibles Layout */
+    display: flex;
+    flex-direction: column;    /* Flexbox für Hauptinhalt */
+    align-items: center;       /* Zentrieren der Kinder-Elemente horizontal */
+    text-align: left;        /* Zentrieren des Textes */
+    background-position: center; /* Hintergrundbild zentrieren */
+    background-repeat: no-repeat; /* Hintergrundbild nicht wiederholen */
+}
+
+
+
+
+
+
+
+/* styles.css */
+
+.image-container {
+    position: relative; /* Create a positioning context for the text */
+    display: inline-block; /* Allow container to fit the image size */
+}
+
+.image {
+    width: 100%; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any inline spacing issues */
+}
+
+.image-text-accommodation {
+    position: absolute; /* Position text over the image */
+    top: 110%; /* Center vertically */
+    left: 10%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the text using translation */
+    color: white; /* Text color */
+    /*text-transform: uppercase; */
+    letter-spacing: 4px;
+    color:#b08c37;
+    font-family: California FB;
+    text-align: left;
+    font-size: x-large;
+    
+    /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Optional: Add text shadow for better readability */
+    padding: 10px; /* Optional: Add padding */
+    background-color: rgba(243, 236, 236, 0.445); /* Optional: Semi-transparent background for contrast */
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
+.image-text-afternoon-tea {
+    position: absolute; /* Position text over the image */
+    top: 110%; /* Center vertically */
+    left: 25%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the text using translation */
+    color: white; /* Text color */
+    /*text-transform: uppercase; */
+    letter-spacing: 4px;
+    color:#b08c37;
+    font-family: California FB;
+    text-align: left;
+    font-size: x-large;
+    
+    /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Optional: Add text shadow for better readability */
+    padding: 10px; /* Optional: Add padding */
+    background-color: rgba(243, 236, 236, 0.445); /* Optional: Semi-transparent background for contrast */
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
+
+.image-text-meeting-room {
+    position: absolute; /* Position text over the image */
+    top: 110%; /* Center vertically */
+    left: 40%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the text using translation */
+    color: white; /* Text color */
+    /*text-transform: uppercase; */
+    letter-spacing: 4px;
+    color:#b08c37;
+    font-family: California FB;
+    text-align: left;
+    font-size: x-large;
+    
+    /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Optional: Add text shadow for better readability */
+    padding: 10px; /* Optional: Add padding */
+    background-color: rgba(243, 236, 236, 0.445); /* Optional: Semi-transparent background for contrast */
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
+
+
+.image-text-brunch-room {
+    position: absolute; /* Position text over the image */
+    top: 110%; /* Center vertically */
+    left: 55%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the text using translation */
+    color: white; /* Text color */
+    /*text-transform: uppercase; */
+    letter-spacing: 4px;
+    color:#b08c37;
+    font-family: California FB;
+    text-align: left;
+    font-size: x-large;
+    
+    /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Optional: Add text shadow for better readability */
+    padding: 10px; /* Optional: Add padding */
+    background-color: rgba(243, 236, 236, 0.445); /* Optional: Semi-transparent background for contrast */
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
+
+.image-text-asia-restaurant {
+    position: absolute; /* Position text over the image */
+    top: 110%; /* Center vertically */
+    left: 71%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the text using translation */
+    color: white; /* Text color */
+    /*text-transform: uppercase; */
+    letter-spacing: 4px;
+    color:#b08c37;
+    font-family: California FB;
+    text-align: left;
+    font-size: x-large;
+    
+    /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Optional: Add text shadow for better readability */
+    padding: 10px; /* Optional: Add padding */
+    background-color: rgba(243, 236, 236, 0.445); /* Optional: Semi-transparent background for contrast */
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
+
+
+.image-text-jazz-bar {
+    position: absolute; /* Position text over the image */
+    top: 110%; /* Center vertically */
+    left: 87%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the text using translation */
+    color: white; /* Text color */
+    /*text-transform: uppercase; */
+    letter-spacing: 4px;
+    color:#b08c37;
+    font-family: California FB;
+    text-align: left;
+    font-size: x-large;
+    
+    /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Optional: Add text shadow for better readability */
+    padding: 10px; /* Optional: Add padding */
+    background-color: rgba(243, 236, 236, 0.445); /* Optional: Semi-transparent background for contrast */
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
+
+.position-image-voucher-page {
+    position: center;
+    
+}
+
+.position-image-voucher {
+    position: absolute;
+    top: 843px; /* Distance from the top of the container */
+    left: 800px; /* Distance from the left of the container */
+}
+
+.position-image-accommodation {
+    position: absolute;
+    top: 560px; /* Distance from the top of the container */
+    left: 70px; /* Distance from the left of the container */
+}
+
+.position-image-afternoon-tea {
+    position: absolute;
+    top: 560px; /* Distance from the top of the container */
+    left: 360px; /* Distance from the left of the container */
+}
+
+.position-image-meeting-room {
+    position: absolute;
+    top: 560px; /* Distance from the top of the container */
+    left: 650px; /* Distance from the left of the container */
+}
+.position-image-brunch-room {
+    position: absolute;
+    top: 560px; /* Distance from the top of the container */
+    left: 940px; /* Distance from the left of the container */
+}
+.position-image-asia-restaurant {
+    position: absolute;
+    top: 560px; /* Distance from the top of the container */
+    left: 1230px; /* Distance from the left of the container */
+}
+.position-image-jazz_bar {
+    position: absolute;
+    top: 560px; /* Distance from the top of the container */
+    left: 1520px; /* Distance from the left of the container */
+}
+
+.image-caption {
+    font-style: italic; /* Make the caption italic */
+    color: #555; /* Set a dark gray color for the caption */
+    margin-top: 8px; /* Add space between the image and the caption */
+}
+
+.product-card-caption {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color:#b08c37;
+    font-family: California FB;
+    text-align: center;
+    font-size: x-large;
+    text-decoration: underline;
+    margin-top: 265px;
+  }
+
+  
+
+.product-card-title {
+    font-size: inherit;
+    line-height: inherit;
+}
+
+/* Centering an image horizontally */
+.social-container {
+   position: right;
+}
+
+footer {
+   
+    background-color: #333;         /* Dark background */
+    padding: 20px 0;                /* Vertical padding */
+    color: white;                   /* Set text color to white */
+}
+
+.footer-content {
+    max-width: 1200px;              /* Limit footer content width */
+    margin: 0 auto;                 /* Center the footer content */
+    display: flex;                  /* Use flexbox for layout */
+    justify-content: flex-end;      /* Align items to the right */
+    align-items: center;            /* Vertically center the content */
+}
+
+.social-container {
+    margin-top: 0;                  /* Adjust the margin if necessary */
+}
+
+.social-icons {
+    list-style: none;               /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex;                  /* Display icons in a row */
+}
+
+.social-icons li {
+    margin: 0 15px;                 /* Add spacing between the icons */
+}
+
+.social-icons a {
+    text-decoration: none;          /* Remove underline from links */
+    color: white;                   /* Set text color to white */
+}
+
+.social-icons a:hover span {
+    text-decoration: underline;     /* Underline the text on hover */
+}
+
+svg {
+    transition: transform 0.3s ease; /* Smooth transition for icon scaling */
+}
+
+svg:hover {
+    transform: scale(1.2);           /* Slight zoom effect on hover */
+}
+
+.return-button {
+    background-color: #a37217dc;  /* Button background color */
+    color: white;               /* Button text color */
+    padding: 10px 20px;         /* Padding around the text */
+    text-decoration: none;      /* Remove underline for links */
+    border: none;               /* Remove border */
+    border-radius: 5px;         /* Rounded corners */
+    font-size: 16px;            /* Font size */
+    cursor: pointer;            /* Cursor on hover */
+    display: inline-block;      /* Ensure it acts like a button */
+}
+
+.return-button:hover {
+    background-color: hsl(0, 2%, 8%);  /* Darker color on hover */
+}
+
+
+

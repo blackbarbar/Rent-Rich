@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voucher Accommodation</title>
+  <link rel="stylesheet" href="./css/styles_cart.css">
+
+  <style>
+   
+    body {
+      background-color: #e6af19; /* Hintergrund weiß als Beispiel */
+    }
+    
+  
+  </style>
+</head>
+<body>
+
+  <h1>Voucher Accommodation</h1>
+
+  <!-- Anzahl Nächte -->
+  <div class="selection">
+    <h2>Number of Nights</h2>
+    <select id="nights">
+      <option value="1">1 Night</option>
+      <option value="2">2 Nights</option>
+      <option value="3">3 Nights</option>
+      <option value="4">4 Nights</option>
+      <option value="5">5 Nights</option>
+      <option value="6">6 Nights</option>
+      <option value="7">7 Nights</option>
+    </select>
+  </div>
+
+  <!-- Roomauswahl -->
+  <div class="selection">
+    <h2>Room</h2>
+    <select id="room-type">
+      <option value="Deluxe Room only for 150,00 € per Night">Deluxe Room 150,00 € per Night</option>
+      <option value="Grand Deluxe Room only for 300,00 € per Night">Grand Deluxe Room 300,00 € per Night</option>
+      <option value="Grand Superior Room only for 400,00 Euro per Night">Grand Superior Room 400,00 € per Night</option>
+      <option value="Executive Suite only for 500,00 € per Night">Executive Suite 500,00 € per Night</option>
+      <option value="Excelsior Suite only for 700,00 € per Night">Excelsior Suite 700,00 € per Night</option>
+    </select>
+  </div>
+
+  <!-- Breakfastsauswahl -->
+  <div class="selection">
+    <h2>Breakfast</h2>
+    <select id="breakfast">
+      <option value="No Breakfast">No Breakfast</option>
+      <option value="Breakfast for 1 Person 40,00 €">Breakfast for 1 Person 40,00 €</option>
+      <option value="Breakfast for 2 Personen 80,00€">Breakfast for 2 Personen 80,00 €</option>
+    </select>
+  </div>
+
+  <!-- Exklusive Angebote -->
+  <div class="selection">
+    <h2>Luxury Package</h2>
+    <select id="exclusive">
+      <option value="No Exclusive">No Luxury Package</option>
+      <option value="1 Bottle Ruinard Champagner on Departure only for 730,00 €">1 Bootle Ruinard Champagner on Departure only for 730,00 €</option>
+      <option value="1 Box Gourmetpralines (9 piece) on Departure only for 80,00 €">Gourmetpralines (9 St) on Departure only for 80,00 €</option>
+    </select>
+  </div>
+
+  <!-- Warenkorb Button -->
+  <button class="add-to-cart-btn">Add to Cart</button>
+
+  <!-- Warenkorb -->
+  <div id="cart-container">
+    <h2 id="cart-title">Shopping Cart</h2>
+    <div id="cart">
+      <p id="empty-message">Cart is empty.</p>
+    </div>
+  </div>
+
+  <!-- Total price -->
+  <h3 id="total">Total price: 0,00 €</h3>
+  <h3>(You will receive detailed Invoice with VAT after Payment)</h3>
+
+  <script src="./script/cart_accommodation.js"></script>
+</body>
+</html>
+
+
+

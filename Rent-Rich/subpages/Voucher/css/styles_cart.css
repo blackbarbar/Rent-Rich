@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  .selection {
+    margin-bottom: 20px;
+  }
+  
+  select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  
+  button.add-to-cart-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  button.add-to-cart-btn:hover {
+    background-color: #218838;
+  }
+  
+  #cart {
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+  }
+  
+  #total {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  

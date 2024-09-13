@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voucher Afternoon Tea</title>
+  <link rel="stylesheet" href="./css/styles_cart.css">
+  <style>
+    body {
+      background-color: #e6af19;
+      font-family: Arial, sans-serif;
+    }
+    
+    h1, h2, h3 {
+      color: #333;
+    }
+
+    .selection {
+      margin-bottom: 20px;
+    }
+
+    select, button {
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    #cart-container {
+      margin-top: 20px;
+    }
+
+    .cart-item {
+      margin-bottom: 10px;
+    }
+
+    #total {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Voucher Afternoon Tea</h1>
+
+  <!-- Anzahl Persons -->
+  <div class="selection">
+    <label for="persons_tea_time"><h2>Persons</h2></label>
+    <select id="persons_tea_time">
+      <option value="1">1 Person</option>
+      <option value="2">2 Persons</option>
+      <option value="3">3 Persons</option>
+      <option value="4">4 Persons</option>
+      <option value="5">5 Persons</option>
+      <option value="6">6 Persons</option>
+      <option value="7">7 Persons</option>
+    </select>
+  </div>
+
+  <!-- Exklusive Angebote -->
+  <div class="selection">
+    <label for="type_tea_time"><h2>Luxury Package</h2></label>
+    <select id="type_tea_time">
+      <option value="72">English Tea Time Classic with live piano music by pianist for 72,00 € per Person</option>
+      <option value="97">English Tea Time Supierior with live piano music and a glas champaign Nicolas Feuillatte für 97,00 € per Person</option>
+    </select>
+  </div>
+
+  <!-- Warenkorb Button -->
+  <button class="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+
+
+  <div id="cart">
+    <!-- Hier werden die hinzugefügten Artikel angezeigt -->
+  </div>
+  <div id="total">Total price: 0.00 €</div>
+  <div id="empty-message" style="display:none;">Cart is empty.</div>
+  
+  <h3>(You will receive detailed Invoice with VAT after Payment)</h3>
+
+  <script src="./script/cart_afternoon_tea.js"></script>
+</body>
+</html>
+
+
+

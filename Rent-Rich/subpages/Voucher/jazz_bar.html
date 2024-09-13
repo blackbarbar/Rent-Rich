@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voucher Jazz Bar</title>
+  <link rel="stylesheet" href="./css/styles_cart.css">
+  <style>
+    body {
+      background-color: #e6af19;
+      font-family: Arial, sans-serif;
+    }
+    
+    h1, h2, h3 {
+      color: #333;
+    }
+
+    .selection {
+      margin-bottom: 20px;
+    }
+
+    select, button {
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    #cart-container {
+      margin-top: 20px;
+    }
+
+    .cart-item {
+      margin-bottom: 10px;
+    }
+
+    #total {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Geschenkgutschein "Jazz Bar"</h1>
+
+  <!-- Anzahl Personen -->
+  <div class="selection">
+    <label for="persons_jazz_bar"><h2>Anzahl Personen</h2></label>
+    <select id="persons_jazz_bar">
+      <option value="1">1 Person</option>
+      <option value="2">2 Persons</option>
+    </select>
+  </div>
+
+  <!-- Exklusive Angebote -->
+  <div class="selection">
+    <label for="type_jazz_bar"><h2>Exclusive Angebote</h2></label>
+    <select id="type_jazz_bar">
+      <option value="30">Jazz Bar Night Event with piano music and welcome drink 30,00 € per person</option>
+      <option value="150">Jazz Bar Sylvester Event with welcome glass champaign and buffet 150,00 € per person</option>
+    </select>
+  </div>
+
+  <!-- Warenkorb Button -->
+  <button class="add-to-cart-btn" onclick="addToCart()">Add to cart</button>
+
+  <div id="cart">
+    <!-- Hier werden die hinzugefügten Artikel angezeigt -->
+  </div>
+  <div id="total">Total price: 0.00 €</div>
+  <div id="empty-message" style="display:none;">Cart is empty.</div>
+  
+  <h3>(You will receive detailed Invoice with VAT after Payment)</h3>
+
+  <script src="./script/cart_jazz_bar.js"></script>
+</body>
+</html>
+
+

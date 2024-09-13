@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voucher Meeting Room</title>
+  <link rel="stylesheet" href="./css/styles_cart.css">
+  <style>
+    body {
+      background-color: #e6af19;
+      font-family: Arial, sans-serif;
+    }
+    
+    h1, h2, h3 {
+      color: #333;
+    }
+
+    .selection {
+      margin-bottom: 20px;
+    }
+
+    select, button {
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    #cart-container {
+      margin-top: 20px;
+    }
+
+    .cart-item {
+      margin-bottom: 10px;
+    }
+
+    #total {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Voucher Meeting Room</h1>
+
+  <!-- Persons -->
+  <div class="selection">
+    <label for="persons_meeting_room"><h2>Anzahl Persons</h2></label>
+    <select id="persons_meeting_room">
+      <option value="1">1 Person</option>
+      <option value="2">2 Persons</option>
+      <option value="3">3 Persons</option>
+      <option value="4">4 Persons</option>
+      <option value="5">5 Persons</option>
+      <option value="6">6 Persons</option>
+      <option value="7">7 Persons</option>
+      <option value="8">8 Persons</option>
+      <option value="9">9 Persons</option>
+      <option value="10">10 Persons</option>
+      <option value="15">15 Persons</option>
+      <option value="20">20 Persons</option>
+      <option value="25">25 Persons</option>
+      <option value="30">30 Persons</option>
+    </select>
+  </div>
+
+  <!-- Room -->
+  <div class="selection">
+    <label for="type_meeting_room"><h2>Room Type</h2></label>
+    <select id="type_meeting_room">
+      <option value="100">Meeting Room Classic - (max. 30 Persons) - 100,00 €</option>
+      <option value="200">Meeting Room Superior - (max. 30 Persons) - 200,00 €</option>
+      <option value="300">Meeting Room Deluxe - (max. 30 Persons) - 300,00 €</option>
+    </select>
+  </div>
+
+  <!-- Booking Time -->
+  <div class="selection">
+    <label for="meeting_room_booking_time"><h2>Booking Time</h2></label>
+    <select id="meeting_room_booking_time">
+      <option value="100">Full day 08:00 until 18:00 Central European Time (CET)</option>
+      <option value="80">Half day 08:00 until 13:00 Central European Time (CET)</option>
+    </select>
+  </div>
+
+  <!-- Warenkorb Button -->
+  <button class="add-to-cart-btn" onclick="addToCart()">Add to cart</button>
+
+  <div id="cart">
+    <!-- Hier werden die hinzugefügten Artikel angezeigt -->
+  </div>
+  <div id="total">Total price: 0.00 €</div>
+  <div id="empty-message" style="display:none;">Cart is empty.</div>
+  
+  <h3>(You will receive detailed Invoice with VAT after Payment)</h3>
+
+  <script src="./script/cart_meeting_room.js"></script>
+</body>
+</html>

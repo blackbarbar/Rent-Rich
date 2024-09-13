@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afternoon Tea</title>
+    <link rel="stylesheet" href="./css/styles_voucher.css"> <!-- Link to external CSS -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        .image-container {
+            width: 100%;
+            position: relative;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .item-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 20px 0;
+        }
+
+        .item {
+            text-align: center;
+            flex: 1;
+            min-width: 120px;
+            font-size: 1.5vw;
+            /* Scales with viewport */
+            color: #f39c12;
+        }
+
+        .item img {
+            width: 15vw;
+            /* Adjust width to scale with viewport */
+            height: auto;
+            object-fit: cover;
+            transition: width 0.3s ease;
+            /* Smooth scaling */
+        }
+
+        footer {
+            background-color: #000;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            width: 100%;
+            box-sizing: border-box;
+            position: fixed;
+            bottom: 0;
+        }
+
+        .social-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .social-container ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .social-container li {
+            margin-left: 15px;
+        }
+
+        .social-icons a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .return-button {
+            color: white;
+            background-color: #f39c12;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .return-button:hover {
+            background-color: #e67e22;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 1024px) {
+            .item img {
+                width: 20vw;
+                /* Adjust scaling for smaller screens */
+            }
+
+            .item {
+                font-size: 2vw;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .item-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .item img {
+                width: 25vw;
+                /* Smaller scaling for mobile */
+            }
+
+            footer {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .social-container ul {
+                justify-content: center;
+            }
+
+            .return-button {
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .item img {
+                width: 30vw;
+                /* Further reduce size for very small screens */
+            }
+
+            .item {
+                font-size: 3vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="image-container">
+        <img src="./img/voucher_page.JPG" alt="Voucher Page">
+    </div>
+
+    <div class="item-container">
+        <div class="item">
+            <div>Afternoon Tea</div>
+            <a href="afternoon_tea.html">
+                <img src="./img/afternoon_tea.JPG" alt="Afternoon Tea">
+            </a>
+        </div>
+        <div class="item">
+            <div>Luxury Sweet</div>
+            <a href="accommodation.html">
+                <img src="./img/accommodation.JPG" alt="Luxury Sweet">
+            </a>
+        </div>
+        <div class="item">
+            <div>Meeting Room</div>
+            <a href="Meeting_room.html">
+                <img src="./img/meeting_room.JPG" alt="Meeting Room">
+            </a>
+        </div>
+        <div class="item">
+            <div>Brunch</div>
+            <a href="brunch.html">
+                <img src="./img/brunch_room.JPG" alt="Brunch">
+            </a>
+        </div>
+        <div class="item">
+            <div>Restaurant Saigon</div>
+            <a href="asia_restaurant.html">
+                <img src="./img/asia_restaurant.JPG" alt="Restaurant Saigon">
+            </a>
+        </div>
+        <div class="item">
+            <div>Jazz Bar</div>
+            <a href="jazz_bar.html">
+                <img src="./img/jazz_bar.JPG" alt="Jazz Bar">
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <a href="index.html" class="return-button">Back to Startpage</a>
+        <div class="social-container">
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/SNInvent/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                </li>
+                <li><a href="https://www.youtube.com/channel/UCIbg47wBoxEYO1m1o4Z-pLQ" target="_blank"
+                        rel="noopener noreferrer">YouTube</a></li>
+                <li><a href="https://www.instagram.com/sninvent/" target="_blank"
+                        rel="noopener noreferrer">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
